@@ -1,0 +1,23 @@
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="wiki.scene.baselibrary">
+
+    <application
+            android:networkSecurityConfig="@xml/network_security_config"
+            tools:targetApi="n">
+        <!--刘海屏适配开始-->
+        <meta-data
+                android:name="android.notch_support"
+                android:value="true"/>
+
+        <meta-data
+                android:name="android.max_aspect"
+                android:value="2.34"/>
+
+        <meta-data
+                android:name="notch.config"
+                android:value="portrait|landscape"/>
+        <!--刘海屏结束-->
+    </application>
+</manifest>
