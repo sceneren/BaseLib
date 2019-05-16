@@ -13,8 +13,8 @@ publish {
     userOrg='scene'
     groupId='wiki.scene.baselibrary'
     artifactId='baseLibrary'
-    publishVersion='1.0.1'
-    desc='第一次发布'
+    publishVersion='1.0.2'
+    desc='修改kotlin版本'
 }
 
 android {
@@ -75,8 +75,6 @@ dependencies {
     api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
     //Banner
     api 'cn.bingoogolapple:bga-banner:2.2.5@aar'
-    // 视屏播放器
-    api 'com.shuyu:GSYVideoPlayer:2.1.1'
     //Logger
     api 'com.orhanobut:logger:2.2.0'
     //Google开源的一个布局控件

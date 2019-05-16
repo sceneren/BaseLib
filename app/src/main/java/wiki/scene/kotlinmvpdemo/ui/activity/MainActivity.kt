@@ -26,7 +26,7 @@ class MainActivity : BaseActivity() {
 
     override fun initToolBar() {
         super.initToolBar()
-        mTitleBar!!.setTitleMainText(title)
+        mTitleBar?.setTitleMainText(title)
     }
 
     override fun beforeSetContentView() {
