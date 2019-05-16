@@ -6,6 +6,17 @@ apply plugin: 'kotlin-android-extensions' //扩展插件
 
 apply plugin: 'kotlin-kapt'  //kapt3插件
 
+apply plugin: 'com.novoda.bintray-release'
+
+
+publish {
+    userOrg='scene'
+    groupId='wiki.scene.baselibrary'
+    artifactId='baseLibrary'
+    publishVersion='1.0.1'
+    desc='第一次发布'
+}
+
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
 
