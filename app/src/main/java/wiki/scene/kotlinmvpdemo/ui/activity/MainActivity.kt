@@ -3,6 +3,7 @@ package wiki.scene.kotlinmvpdemo.ui.activity
 import com.alibaba.android.arouter.facade.annotation.Autowired
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
+import com.aries.ui.util.NotchUtil
 import com.blankj.rxbus.RxBus
 import com.blankj.utilcode.util.SPUtils
 import kotlinx.android.synthetic.main.activity_main.*
