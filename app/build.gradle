@@ -18,10 +18,22 @@ android {
 
         multiDexEnabled true
     }
-    buildTypes {
+
+    signingConfigs {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            storeFile file("Subtitle.jks")
+            storePassword 'jianyi123'
+            keyAlias 'key0'
+            keyPassword 'jianyi123'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
         }
     }
 
