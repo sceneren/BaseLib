@@ -36,7 +36,9 @@ abstract class BaseActivity : QMUIActivity(),
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        ARouter.getInstance().inject(this);
+        if (needInjectARouter()) {
+            ARouter.getInstance().inject(this)
+        }
         beforeSetContentView()
         setContentView(layoutId())
         initData()
@@ -47,6 +49,10 @@ abstract class BaseActivity : QMUIActivity(),
         initRetryListener()
         initListener()
         bindRxBusEvent()
+    }
+
+    open fun needInjectARouter(): Boolean {
+        return false
     }
 
     open fun beforeSetContentView() {
@@ -102,7 +108,7 @@ abstract class BaseActivity : QMUIActivity(),
      */
     open fun loadData() {}
 
-    open fun bindRxBusEvent(){
+    open fun bindRxBusEvent() {
 
     }
 
