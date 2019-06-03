@@ -13,8 +13,8 @@ publish {
     userOrg = 'scene'
     groupId = 'wiki.scene.baselibrary'
     artifactId = 'baseLibrary'
-    publishVersion = '1.0.7'
-    desc = '修改kotlin版本'
+    publishVersion = '1.0.8'
+    desc = 'presenter支持autoDispose'
 }
 
 android {

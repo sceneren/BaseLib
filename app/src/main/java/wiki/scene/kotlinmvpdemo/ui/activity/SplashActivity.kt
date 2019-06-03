@@ -1,5 +1,6 @@
 package wiki.scene.kotlinmvpdemo.ui.activity
 
+import androidx.lifecycle.LifecycleOwner
 import com.alibaba.android.arouter.launcher.ARouter
 import com.blankj.utilcode.util.BarUtils
 import com.qmuiteam.qmui.util.QMUIDisplayHelper
@@ -10,6 +11,9 @@ import wiki.scene.kotlinmvpdemo.mvp.contract.SplashContract
 import wiki.scene.kotlinmvpdemo.mvp.presenter.SplashPresenter
 
 class SplashActivity : BaseMvpActivity<SplashContract.View, SplashPresenter>(), SplashContract.View {
+    override fun getLifeCycle(): LifecycleOwner {
+        return this
+    }
 
     override fun initPresenter() {
         mPresenter = SplashPresenter(this)
