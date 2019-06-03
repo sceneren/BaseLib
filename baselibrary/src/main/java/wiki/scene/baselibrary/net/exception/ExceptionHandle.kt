@@ -12,10 +12,15 @@ import java.net.UnknownHostException
 import java.text.ParseException
 
 /**
- * Created by xuhao on 2017/12/5.
- * desc: 异常处理类
+ *
+ * @Description:    异常拦截
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 18:03
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 18:03
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：
  */
-
 class ExceptionHandle {
 
 

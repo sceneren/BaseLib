@@ -37,7 +37,7 @@ class MultipleStatusView @JvmOverloads constructor(
     var viewStatus: Int = 0
         private set
     private var mInflater: LayoutInflater? = null
-    private var mOnRetryClickListener: View.OnClickListener? = null
+    private var mOnRetryClickListener: OnClickListener? = null
 
     private val mOtherIds = ArrayList<Int>()
 
@@ -72,7 +72,7 @@ class MultipleStatusView @JvmOverloads constructor(
      *
      * @param onRetryClickListener 重试点击事件
      */
-    fun setOnRetryClickListener(onRetryClickListener: View.OnClickListener) {
+    fun setOnRetryClickListener(onRetryClickListener: OnClickListener) {
         this.mOnRetryClickListener = onRetryClickListener
     }
 
@@ -252,9 +252,9 @@ class MultipleStatusView @JvmOverloads constructor(
     companion object {
         private val TAG = "MultipleStatusView"
 
-        private val DEFAULT_LAYOUT_PARAMS = RelativeLayout.LayoutParams(
-            RelativeLayout.LayoutParams.MATCH_PARENT,
-            RelativeLayout.LayoutParams.MATCH_PARENT
+        private val DEFAULT_LAYOUT_PARAMS = LayoutParams(
+            LayoutParams.MATCH_PARENT,
+            LayoutParams.MATCH_PARENT
         )
 
         val STATUS_CONTENT = 0x00

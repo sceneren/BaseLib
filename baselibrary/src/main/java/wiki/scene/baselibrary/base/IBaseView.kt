@@ -3,9 +3,14 @@ package wiki.scene.baselibrary.base
 import androidx.lifecycle.LifecycleOwner
 
 /**
- * @author Jake.Ho
- * created: 2017/10/25
- * desc:
+ *
+ * @Description:    BaseView
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 17:59
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 17:59
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：
  */
 interface IBaseView {
     fun getLifeCycle(): LifecycleOwner

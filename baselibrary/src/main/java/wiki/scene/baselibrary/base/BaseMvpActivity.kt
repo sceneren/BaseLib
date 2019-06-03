@@ -2,9 +2,14 @@ package wiki.scene.baselibrary.base
 
 
 /**
- * @author xuhao
- * created: 2017/10/25
- * desc:BaseActivity基类
+ *
+ * @Description:    mvpActivity的基类
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 17:58
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 17:58
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：
  */
 abstract class BaseMvpActivity<v : IBaseView, P : BasePresenter<v>> : BaseActivity(), IBaseView {
     /**

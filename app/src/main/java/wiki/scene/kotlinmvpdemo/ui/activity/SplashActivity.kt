@@ -1,6 +1,8 @@
 package wiki.scene.kotlinmvpdemo.ui.activity
 
 import androidx.lifecycle.LifecycleOwner
+import com.alibaba.android.arouter.facade.Postcard
+import com.alibaba.android.arouter.facade.callback.NavCallback
 import com.alibaba.android.arouter.launcher.ARouter
 import com.blankj.utilcode.util.BarUtils
 import com.qmuiteam.qmui.util.QMUIDisplayHelper
@@ -45,8 +47,12 @@ class SplashActivity : BaseMvpActivity<SplashContract.View, SplashPresenter>(), 
         ARouter.getInstance()
             .build(ARouterConfig.MAIN)
             .withString("title", "测试")
-            .navigation()
-        finish()
+            .navigation(this, object : NavCallback() {
+                override fun onArrival(postcard: Postcard?) {
+                    finish()
+                }
+            })
+
     }
 
 

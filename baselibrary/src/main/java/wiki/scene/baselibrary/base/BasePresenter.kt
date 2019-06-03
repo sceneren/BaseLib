@@ -6,8 +6,14 @@ import io.reactivex.disposables.Disposable
 
 
 /**
- * Created by xuhao on 2017/11/16.
  *
+ * @Description:    basePresenter
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 17:58
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 17:58
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：
  */
 open class BasePresenter<T : IBaseView>(context: Context) : IPresenter<T> {
 

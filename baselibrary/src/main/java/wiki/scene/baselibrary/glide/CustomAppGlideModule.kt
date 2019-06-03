@@ -12,8 +12,14 @@ import com.bumptech.glide.module.AppGlideModule
 import java.io.InputStream
 
 /**
- * Created by xuhao on 2017/12/1.
- * desc:
+ *
+ * @Description:    自定义Glide
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 18:00
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 18:00
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：
  */
 @GlideModule
 class CustomAppGlideModule : AppGlideModule() {

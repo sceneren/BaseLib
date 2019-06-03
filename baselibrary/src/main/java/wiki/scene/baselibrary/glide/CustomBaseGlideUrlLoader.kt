@@ -7,10 +7,15 @@ import java.io.InputStream
 import java.util.regex.Pattern
 
 /**
- * Created by xuhao on 2017/12/1.
- * desc:
+ *
+ * @Description:    自定义glide
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 18:00
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 18:00
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：
  */
-
 class CustomBaseGlideUrlLoader(concreteLoader: ModelLoader<GlideUrl, InputStream>, modelCache: ModelCache<String, GlideUrl>) : BaseGlideUrlLoader<String>(concreteLoader, modelCache) {
 
     /**

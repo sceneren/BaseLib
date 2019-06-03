@@ -11,11 +11,15 @@ import pub.devrel.easypermissions.EasyPermissions
 import wiki.scene.baselibrary.view.MultipleStatusView
 
 /**
- * @author Xuhao
- * created: 2017/10/25
- * desc:
+ *
+ * @Description:    fragment基类
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 17:57
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 17:57
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：1.0.8
  */
-
 abstract class BaseFragment : Fragment() {
 
     /**
@@ -60,7 +64,7 @@ abstract class BaseFragment : Fragment() {
     }
 
     open val mRetryClickListener: View.OnClickListener = View.OnClickListener {
-        lazyLoad()
+        loadData()
     }
 
 
@@ -83,6 +87,8 @@ abstract class BaseFragment : Fragment() {
     override fun onDestroy() {
         super.onDestroy()
     }
+
+    abstract fun loadData()
 
 
     /**

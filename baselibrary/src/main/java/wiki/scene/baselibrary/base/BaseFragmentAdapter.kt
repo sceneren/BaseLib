@@ -5,13 +5,19 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 
-
 /**
- * Created by xuhao on 2017/11/30.
+ *
+ * @Description:    该类内的每一个生成的 Fragment 都将保存在内存之中，
  * 该类内的每一个生成的 Fragment 都将保存在内存之中，
  * 因此适用于那些相对静态的页，数量也比较少的那种；
  * 如果需要处理有很多页，并且数据动态性较大、占用内存较多的情况，
  * 应该使用FragmentStatePagerAdapter。
+ * @Author:         scene
+ * @CreateDate:     2019-06-03 17:57
+ * @UpdateUser:     更新者：
+ * @UpdateDate:     2019-06-03 17:57
+ * @UpdateRemark:   更新说明：
+ * @Version:        版本号：
  */
 class BaseFragmentAdapter : FragmentPagerAdapter {
 
